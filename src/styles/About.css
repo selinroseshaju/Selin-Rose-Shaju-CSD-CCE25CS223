@@ -1,0 +1,101 @@
+.page-shell {
+  padding-top: 1rem;
+}
+
+.about-intro {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.content-panel {
+  padding: 1.75rem;
+  margin-top: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 0.9rem;
+  box-shadow: var(--shadow-card);
+}
+
+.content-panel h2 {
+  margin: 0 0 1.2rem;
+  color: var(--color-ink);
+  font-size: clamp(1.65rem, 2vw, 2rem);
+}
+
+.timeline-list,
+.bullet-list,
+.achievement-list,
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-card {
+  padding: 1.3rem 1.4rem;
+  background: #fff;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 1.25rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.04);
+}
+
+.muted-text {
+  color: var(--color-muted);
+}
+
+.meta-label {
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.bullet-list {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  color: var(--color-muted);
+  list-style: disc;
+}
+
+.achievement-list {
+  display: grid;
+  gap: 0.8rem;
+  color: #4b5563;
+}
+
+.achievement-list li {
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.achievement-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
+
+.goals-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.goal-card {
+  padding: 1.15rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 0.8rem;
+  box-shadow: var(--shadow-card);
+}

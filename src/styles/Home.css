@@ -1,0 +1,194 @@
+.hero-section {
+  padding: 4.5rem 0 3rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-copy .intro-text {
+  margin-top: 1.2rem;
+  max-width: 560px;
+  font-size: 1.06rem;
+  color: var(--color-muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.primary-btn,
+.secondary-btn,
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 0.65rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 0.8rem 1.25rem;
+  background: var(--color-accent);
+  color: #fff;
+  box-shadow: none;
+}
+
+.secondary-btn {
+  padding: 0.8rem 1.25rem;
+  background: var(--color-surface);
+  border-color: var(--color-line);
+  color: var(--color-ink);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.project-link:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-card);
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.image-frame {
+  position: relative;
+  width: min(100%, 240px);
+  border: 1px solid var(--color-line);
+  border-radius: 1rem;
+  padding: 0.6rem;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.image-frame img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0.65rem;
+}
+
+.skill-grid,
+.project-grid,
+.goals-grid {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.skill-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.skill-card,
+.info-card,
+.goal-card,
+.project-card,
+.content-panel,
+.contact-form {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 0.9rem;
+  box-shadow: var(--shadow-card);
+}
+
+.skill-card {
+  padding: 1.2rem 1.1rem;
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--color-ink);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.skill-progress-track {
+  height: 0.7rem;
+  border-radius: 999px;
+  background: #e9e8e2;
+  overflow: hidden;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--color-accent);
+}
+
+.project-card {
+  overflow: hidden;
+}
+
+.project-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.project-card-body {
+  padding: 1.2rem;
+}
+
+.project-card-body h3,
+.info-card h3,
+.goal-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--color-ink);
+}
+
+.project-card-body p,
+.info-card p,
+.goal-card p,
+.contact-copy p,
+.not-found-box p,
+.about-intro p {
+  color: var(--color-muted);
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.project-tech-list span {
+  background: var(--color-accent-soft);
+  color: var(--color-accent-dark);
+  border-radius: 0.4rem;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.project-link {
+  width: fit-content;
+  padding: 0.7rem 1.1rem;
+  background: var(--color-accent-soft);
+  color: var(--color-accent-dark);
+  border-radius: 0.55rem;
+}
+
+@media (max-width: 860px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
